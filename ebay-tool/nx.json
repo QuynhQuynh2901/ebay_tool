@@ -4,12 +4,15 @@
   "affected": {
     "defaultBase": "master"
   },
+  
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "accessToken": "MGY4YzM3YzgtNDk5YS00OTdmLTlmMjUtYmE4YmY4MTQwZDQ1fHJlYWQtd3JpdGU="
+        "accessToken": "MGY4YzM3YzgtNDk5YS00OTdmLTlmMjUtYmE4YmY4MTQwZDQ1fHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -43,7 +46,7 @@
     "appsDir": "packages",
     "libsDir": "packages"
   },
-  "defaultProject": "ebay-tool-be",
+ 
   "generators": {
     "@nrwl/react": {
       "application": {
@@ -56,13 +59,8 @@
         "linter": "eslint"
       }
     }
-  },
-  "projects": {
-    "api": {
-      "tags": []
-    },
-    "core": {
-      "tags": []
-    }
   }
+  ,
+  "defaultProject": "ebay-tool-be"
 }
+  

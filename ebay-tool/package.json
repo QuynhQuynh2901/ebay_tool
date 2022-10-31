@@ -41,7 +41,7 @@
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "lint-staged": "^13.0.3",
-    "nx": "^15.0.4",
+    "nx": "15.0.4",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
     "sass": "1.55.0",
@@ -75,3 +75,4 @@
     "tslib": "^2.3.0"
   }
 }
+
