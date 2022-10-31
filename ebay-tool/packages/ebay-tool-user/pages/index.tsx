@@ -1,4 +1,5 @@
 import styles from './index.module.scss'
+import Link from 'next/link'
 
 export function Index() {
   /*
@@ -13,7 +14,7 @@ export function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome ebay-tool-user 👋
+              <Link href={"/about"}>Welcome ebay-tool-user </Link>  
             </h1>
           </div>
 

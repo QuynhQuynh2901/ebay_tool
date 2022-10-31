@@ -56,5 +56,13 @@
         "linter": "eslint"
       }
     }
+  },
+  "projects": {
+    "api": {
+      "tags": []
+    },
+    "core": {
+      "tags": []
+    }
   }
 }

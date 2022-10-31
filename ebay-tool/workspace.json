@@ -1,0 +1,159 @@
+
+{
+  "version": 1,
+  "projects": {
+    "api": {
+      "root": "packages/ebay-tool-be",
+      "sourceRoot": "packages/ebay-tool-be/src",
+      "projectType": "application",
+      "prefix": "ebay-tool-be",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/packages/ebay-tool-be",
+            "main": "packages/ebay-tool-be/src/main.ts",
+            "tsConfig": "packages/ebay-tool-be/tsconfig.app.json",
+            "assets": ["packages/ebay-tool-be/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "packages/ebay-tool-be/src/environments/environment.ts",
+                  "with": "packages/ebay-tool-be/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": ["packages/ebay-tool-be/tsconfig.app.json", "packages/ebay-tool-be/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!packages/ebay-tool-be/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "packages/ebay-tool-be/jest.config.js",
+            "tsConfig": "packages/ebay-tool-be/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "core": {
+      "root": "core",
+      "sourceRoot": "core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": ["core/tsconfig.lib.json", "core/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!core/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "core/jest.config.js",
+            "tsConfig": "core/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "course": {
+      "root": "libs/course",
+      "sourceRoot": "libs/course/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": ["libs/course/tsconfig.lib.json", "libs/course/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/course/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/course/jest.config.js",
+            "tsConfig": "libs/course/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "data": {
+      "root": "libs/data",
+      "sourceRoot": "libs/data/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": ["libs/data/tsconfig.lib.json", "libs/data/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/data/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/data/jest.config.js",
+            "tsConfig": "libs/data/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "auth": {
+      "root": "libs/auth",
+      "sourceRoot": "libs/auth/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": ["libs/auth/tsconfig.lib.json", "libs/auth/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/auth/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/auth/jest.config.js",
+            "tsConfig": "libs/auth/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/nest"
+  },
+  "defaultProject": "ebay-tool-be"
+}
