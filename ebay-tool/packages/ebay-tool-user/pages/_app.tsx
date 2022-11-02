@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import './styles.css'
+
+import 'antd/dist/antd.css'
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -8,7 +9,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to ebay-tool-user!</title>
       </Head>
-      <main className="app">
+      <main>
         <Component {...pageProps} />
       </main>
     </>

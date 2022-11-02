@@ -1,2 +1,39 @@
-.page {
+// .page {
+// }
+.header{
+    display: flex;
+    background-color: blue;
+    justify-content: space-between;
+    padding: 0.8rem 0.5rem;
+    align-content: flex-end;
 }
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    .name {
+       
+        font-weight: 600;
+        font-size: 1.27rem;
+        color: white;
+        span {
+            font-size: 0.7rem;
+        }
+    }
+   
+}
+.setting{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.btn-chat{
+    padding: 0.8rem 0.9rem;
+    background-image: linear-gradient(to right, #2626e9, #8a40c7);
+    border-radius: 50%;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+ }

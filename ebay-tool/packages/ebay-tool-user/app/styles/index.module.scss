@@ -1,0 +1,196 @@
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #5598d7;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0.8rem 0.5rem;
+    align-items:center
+}
+.logo{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    .name {
+        font-weight: 600;
+        font-size: 1.27rem;
+        color: white;
+        span {
+            font-size: 0.7rem;
+        }
+    }
+}
+.setting{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.input-search {
+    width: 100%;
+     padding: 0.4rem;
+      font-size: 0.8rem
+}
+
+.btn-header-dropdown {
+    background-color: #5598d7;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.4rem 0.6rem;
+    color: white;
+}
+.container-products {
+    margin-right: 0.2rem;
+}
+.list-product{
+    margin-top: 1rem;
+    padding: 0.2rem;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+}
+.state-product {
+    width: 20%;
+    background-color: red;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    color: white;
+    text-align: center;
+}
+.product {
+    border: 1px solid #d9d9d9;
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+.product-id {
+    margin-bottom: 0.2rem;
+    color: gray;
+}
+.product-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.product-container >  div{
+    width: 30%;
+}
+.product-container >  p{
+    width: 68%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.product-icon-delete {
+    position: absolute;
+    top: 2rem;
+    right: 0.8rem;
+    color: red;
+    font-size: 1.2rem
+}
+.label-switch {
+    margin-left: 0.7rem;
+    color: gray;
+    font-style: italic;
+}
+.message{
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 0.3rem;
+}
+.message-center {
+    padding: 0 0.2rem;
+}
+.message-customer-name {
+    color: gray;
+}
+.message-icon-delete {
+    color: red;
+    font-size: 1.2rem
+}
+.descriptions-label{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase
+}
+.product-detail{
+    padding: 1rem;
+}
+.product-detail-action{
+    font-size: 1.2rem;
+}
+.list-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+}
+.img-product{
+    width: 60%;
+    margin: 0.7rem auto;
+}
+.buyer{
+    padding:  0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.buyer-avatar{
+    
+    margin: 1rem auto;
+}
+
+.tab-container {
+    border: 1px solid #d9d9d9;
+    border-radius:5px;
+    box-shadow: 0.2px 4px #d1cccc6e;
+}
+.btn-buyer {
+    border-color: #5598d7;
+    color: #0a4ce2
+}
+.list-action-buyer {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.chatbox-title{
+    text-align: right;
+    margin-right: 0.4rem;
+}
+.chatbox {
+    height: 300px;
+    padding: 0 0.2rem;
+    position: relative;
+}
+.chatbox-input-container{
+    display: flex;
+    flex-direction: row;
+   
+    padding: 0.5rem 0.5rem;
+}
+.chat-box-content {
+    height: 27rem;
+    box-shadow: 0.2px 4px #d1cdcd6e;
+    border: 1px solid #d9d9d9;
+}
+.chat-box-time {
+   margin: 0.7rem 0 0 0;
+   font-style: italic;
+   color: gray;
+}
+.chat-box-list-action{
+    margin-left: 1rem;
+}
+.chat-box-btn-send{
+    margin-bottom: 0.9rem;
+    border-radius: 0.3rem;
+}
+.chatBox-textArea {
+    width: 80%;  
+  
+}
