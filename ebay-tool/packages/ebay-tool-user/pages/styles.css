@@ -387,3 +387,12 @@ summary svg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+#chat-box::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+/* #list-product::-webkit-scrollbar {
+  width: 3px;
+  display: none;
+} */

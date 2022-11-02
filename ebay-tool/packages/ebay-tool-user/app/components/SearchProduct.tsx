@@ -35,15 +35,16 @@ export function SearchProduct() {
     return (
         <div className={styles["container-products"]}>
             <Input
+                className={styles['btn-search-dropdown']}
                 placeholder="Item ID or title or buyer or..."
                 suffix={
                     <SearchOutlined />
                 } />
-            <Dropdown overlay={menu} >
-                <Button style={{width: '100%'}}>dropdown &ensp;<DownOutlined />
+            <Dropdown overlay={menu}  className={styles['btn-search-dropdown']}>
+                <Button style={{width: '100%' }}>dropdown &ensp;<DownOutlined />
                 </Button>
             </Dropdown>
-            <Dropdown overlay={menu} >
+            <Dropdown overlay={menu} className={styles['btn-search-dropdown']}>
                 <Button style={{width: '100%'}}>dropdown &ensp;<DownOutlined />
                 </Button>
             </Dropdown>

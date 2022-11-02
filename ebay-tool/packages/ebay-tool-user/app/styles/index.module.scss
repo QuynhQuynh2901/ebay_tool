@@ -40,14 +40,22 @@
     padding: 0.4rem 0.6rem;
     color: white;
 }
+.btn-search-dropdown {
+    margin-bottom: 0.3rem;
+    border-radius: 6px;
+}
 .container-products {
     margin-right: 0.2rem;
 }
 .list-product{
-    margin-top: 1rem;
-    padding: 0.2rem;
+    height: 25rem;
+    margin: 0.7rem 0;
+    padding: 0.3rem;
     border-left: 1px solid #d9d9d9;
     border-right: 1px solid #d9d9d9;
+    box-shadow: 0.2px 4px #d1cccc6e;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
 }
 .state-product {
     width: 20%;
@@ -63,6 +71,9 @@
     padding: 0.4rem;
     margin-bottom: 0.5rem;
 }
+.product:hover {
+    background-color: #dfdf6775;
+}
 .product-id {
     margin-bottom: 0.2rem;
     color: gray;
@@ -74,12 +85,14 @@
     align-items: flex-start;
 }
 .product-container >  div{
-    width: 30%;
+    width: 35%;
 }
 .product-container >  p{
     width: 68%;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
 }
 .product-icon-delete {
     position: absolute;
@@ -101,6 +114,9 @@
     align-items: center;
     border: 1px solid #d9d9d9;
     margin-bottom: 0.3rem;
+}
+.message:hover{
+    background-color: #c7b557;
 }
 .message-center {
     padding: 0 0.2rem;
@@ -175,9 +191,13 @@
 }
 .chat-box-content {
     height: 27rem;
-    box-shadow: 0.2px 4px #d1cdcd6e;
+    box-shadow: 0.2px 0.2px 4px #d1cdcd6e;
     border: 1px solid #d9d9d9;
+    padding: 0 0.7rem;
+    border-radius: 0.3rem;
+    overflow-y: scroll;
 }
+
 .chat-box-time {
    margin: 0.7rem 0 0 0;
    font-style: italic;
@@ -192,5 +212,43 @@
 }
 .chatBox-textArea {
     width: 80%;  
-  
+}
+.chat-box-message-customer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 0.4rem;
+   
+}
+.chat-box-message-seller{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 0.4rem;
+    
+}
+.chat-box-message-content{
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0.2px 1px #d1cdcd6e;
+    border-radius: 0.3rem;
+ 
+}
+.chat-box-message-content-seller{
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0.2px 1px #d1cdcd6e;
+    border-radius: 0.3rem;
+    background-color: #524f4f1a;
+}
+
+.chat-box-message-time {
+    margin-bottom: 0;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: gray;
 }

@@ -2,6 +2,8 @@
 import { Button, Input } from 'antd';
 import styles from '../styles/index.module.scss'
 import { FileAddOutlined, PaperClipOutlined } from '@ant-design/icons';
+import Message from './Message';
+import MessageSeller from './MessageSeller';
 
 const ChatBox = () => {
     const { TextArea } = Input;
@@ -11,7 +13,15 @@ const ChatBox = () => {
     return (
         <div className={styles['chatbox']}>
             <p className={styles['chatbox-title']}>text</p>
-            <div className={styles['chat-box-content']}>khung chat</div>
+            <div className={styles['chat-box-content']} id='chat-box'>
+            <Message></Message>
+            <Message></Message>
+            <Message></Message>
+            <Message></Message>
+            <MessageSeller></MessageSeller>
+            <MessageSeller></MessageSeller>
+            <MessageSeller></MessageSeller>
+            </div>
             <p className={styles['chat-box-time']}> 2022-11-02T00:00:00.036Z text</p>
             <div className={styles['chatbox-input-container']}>
                 <div className={styles['chatBox-textArea']}>

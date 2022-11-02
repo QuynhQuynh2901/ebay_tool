@@ -3,11 +3,11 @@
 import { Row, Col, Layout,  } from 'antd';
 import ChatBox from '../app/components/ChatBox';
 import { Header } from '../app/components/Header'
-import Messages from '../app/components/messages';
 import SearchProduct from '../app/components/SearchProduct';
 import TabItemBuyer from '../app/components/TabItemBuyer';
 import {WechatOutlined} from '@ant-design/icons';
 import styles from './index.module.scss'
+import ListMessage from '../app/components/ListMessage';
 
 export function Index() {
   // const { Footer } = Layout;
@@ -22,7 +22,7 @@ export function Index() {
             <SearchProduct></SearchProduct>
           </Col>
           <Col span={4}>
-            <Messages></Messages>
+            <ListMessage></ListMessage>
           </Col>
           <Col span={11}>
             <ChatBox></ChatBox>

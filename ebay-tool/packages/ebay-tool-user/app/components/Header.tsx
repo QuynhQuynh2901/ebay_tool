@@ -51,8 +51,8 @@ export function Header() {
             <BellFilled  style={{color: "white", fontSize: 20}}/>
           </Badge>
        </div>
-        <div>item1</div>
-        <div>item2</div>
+        <div style={{color: 'white'}}>Item1</div>
+        <div style={{color: 'white'}}>Item2</div>
         <Dropdown overlay={menu}>
           <Button className={styles['btn-header-dropdown']}>dropdown &ensp;<DownOutlined />
           </Button>

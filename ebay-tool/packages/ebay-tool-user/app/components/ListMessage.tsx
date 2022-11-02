@@ -2,7 +2,7 @@ import styles from '../styles/index.module.scss'
 import {  DeleteFilled } from '@ant-design/icons';
 import { Switch } from 'antd';
 
-const Messages = () =>{
+const ListMessage = () =>{
     return (
         <div className={styles['list-message']}>
             <div className={styles['message-center']}>
@@ -24,4 +24,4 @@ const Messages = () =>{
         </div>
     )
 }
-export default Messages
+export default ListMessage
