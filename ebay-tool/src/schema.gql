@@ -1,0 +1,25 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: Int!
+  firstName: String!
+  lastName: String!
+  isActive: Boolean!
+}
+
+type Query {
+  findAll: [User!]!
+}
+
+type Mutation {
+  create(createUserDto: CreateUserDto!): User!
+}
+
+input CreateUserDto {
+  id: Float!
+  firstName: String!
+  lastName: String!
+  isActive: Boolean!
+}
